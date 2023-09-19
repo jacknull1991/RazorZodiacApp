@@ -14,7 +14,7 @@
     <form method="post">
         <div class="form-group">
             <label asp-for="Year" class="control-label"></label>
-            <input asp-for="Year" class="form-control" type="number"/>
+            <input asp-for="Year" class="form-control" type="number" placeholder="Enter a year between 1900 and next year"/>
         </div>
 
         <div class="form-group">
@@ -26,7 +26,7 @@
     <br/>
     @if (error != null) {
         <div class="mx-auto alert alert-danger" style="width: 300px;">
-            <p>Year must be between 1900 and next year. Please tyry again.</p>
+            <p>Year must be between 1900 and next year. Please try again.</p>
         </div>
     }
     else {
